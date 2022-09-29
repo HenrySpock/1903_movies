@@ -1,0 +1,10 @@
+.messages .success {
+    border: 2px solid rgb(125, 248, 226);
+    color: rgb(125, 248, 226);
+}
+
+.messages .error {
+    border: 2px solid rgb(229, 197, 141);
+    color: rgb(229, 197, 141);
+}
+ 
