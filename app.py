@@ -26,6 +26,8 @@ def show_all_movies():
 
 @app.route("/movies/new", methods=["POST"])
 def add_movie():
+    # print("Y HELO THAR")
+    # raise
     title = request.form['title']
     # Add to pretend DB 
     # MOVIES.append(title)
@@ -36,6 +38,10 @@ def add_movie():
         #.append() changed to .add() because MOVIES changed from list to set
         # return render_template('movies.html', movies=MOVIES) : causes POST issue with resubmission
         flash('Created your Movie!', 'success')
+    # Below is importing/using the PDB Python Debugger. Usuaully it's deleted out of code 
+    # after use, but I commented it out here so it's visible.
+    # import pdb
+    # pdb.set_trace()
     return redirect('/movies')
     #This redirect gets us off of the "POST" route where resubmissions can occur.
 
